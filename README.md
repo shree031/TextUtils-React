@@ -19,7 +19,10 @@ TextUtil is a simple and responsive React-based text utility app. It allows user
 
 ## 📸 Screenshot
 
-![TextUtil Screenshot](https://i.imgur.com/HXhT1eM.png) <!-- Replace with your own screenshot if available -->
+![image](https://github.com/user-attachments/assets/0e934acf-00e8-4fae-b506-c5395ac94ba0)
+![image](https://github.com/user-attachments/assets/dedcf2c7-f032-42c9-8b36-3a21b48f88cf)
+
+
 
 ## 📁 Folder Structure
 
