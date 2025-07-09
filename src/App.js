@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import TextForm from "./components/TextForm";
+import Navbar from "./components/navbar";
 
-function App() {
+export default function App() {
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    document.body.className = `bg-${newTheme} text-${
+      newTheme === "light" ? "dark" : "light"
+    }`;
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
+      <div className="container p-2">
+        <TextForm title="Wanna see magic? Type something..." theme={theme} />
+      </div>
+    </>
   );
 }
-
-export default App;
