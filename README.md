@@ -1,4 +1,5 @@
-# TextUtil
+# TextUtil [![Live Demo](https://img.shields.io/badge/View-Live-green)](https://shree031.github.io/TextUtils-React/)
+
 
 TextUtil is a simple and responsive React-based text utility app. It allows users to perform various operations on their text such as converting to uppercase/lowercase, capitalizing, removing extra spaces, and more. The app also supports a light/dark theme toggle to enhance accessibility and user experience.
 
